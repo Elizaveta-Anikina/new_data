@@ -1,4 +1,3 @@
-# new_data
 # Проект 0. Угадай число
 
 ## Описание проекта    
@@ -18,5 +17,5 @@
 Учимся писать хороший код на python
 
 ### Результаты:  
-....
+
 https://colab.research.google.com/drive/1a-mMvfE0sfHhpWkg18oVEBK8i2jmBL35?usp=sharing
