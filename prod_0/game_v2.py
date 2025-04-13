@@ -19,9 +19,9 @@ def random_predict(number:int=1) -> int:
     while number != predict:
         count += 1
         if number > predict:
-            predict += 5
+            predict += 25
         elif number < predict:
-            predict -= 1
+            predict -= 5
 
     return count
 
@@ -38,7 +38,7 @@ def score_game(random_predict) -> int:
 
     count_ls = [] # список для сохранения количества попыток
     np.random.seed(1) # фиксируем сид для воспроизводимости
-    random_array = np.random.randint(1, 101, size=(1000)) # загадали список чисел
+    random_array = np.random.randint(1, 101, size=(10000)) # загадали список чисел
 
     for number in random_array:
         count_ls.append(random_predict(number))
