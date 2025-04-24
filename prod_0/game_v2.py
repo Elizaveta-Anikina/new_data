@@ -15,13 +15,17 @@ def random_predict(number:int=1) -> int:
 
     count = 0
     predict = np.random.randint(1, 101)
+    low = 0
+    high = predict - 1
+    mid= predict // 2
 
-    while number != predict:
+    while number != predict and low <= high:
         count += 1
         if number > predict:
-            predict += 15
+            low = mid + 1
         elif number < predict:
-            predict -= 2
+            high = mid - 1
+        mid = (low + high) // 2
 
     return count
 
